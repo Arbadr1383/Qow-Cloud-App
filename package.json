@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
+    "build:cloud": "echo Cloudflare Web build - no Electron build required",
     "dev:pages": "npx wrangler pages dev .",
     "deploy:pages": "npx wrangler pages deploy ."
   },
