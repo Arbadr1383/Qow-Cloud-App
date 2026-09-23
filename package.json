@@ -1,0 +1,40 @@
+{
+  "name": "documentsqow",
+  "version": "1.0.0",
+  "description": "نرم افزار حسابداری قو",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev:pages": "npx wrangler pages dev .",
+    "deploy:pages": "npx wrangler pages deploy ."
+  },
+  "keywords": [],
+  "author": "Qow",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2"
+  },
+  "build": {
+    "appId": "ir.qow.hesabdari",
+    "productName": "Hesabdari Qow",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "qow_logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  }
+}
