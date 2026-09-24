@@ -5,4 +5,4 @@ pages_build_output_dir="."
 [[d1_databases]]
 binding="DB"
 database_name="qow-accounting-db"
-database_id="PASTE_D1_DATABASE_ID_HERE"
+database_id="d9d0f630-4a74-469e-9b2c-85326aa9b8b8"
